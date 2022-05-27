@@ -1,0 +1,15 @@
+/* base styles, feel free to edit */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial;
+}
+
+@media (min-width: 820px) {
+    
+}
+
+@media (min-width: 1920px) {
+    
+}

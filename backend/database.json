@@ -1,0 +1,289 @@
+{
+  "users": {
+    "20041": {
+      "email": "kevin7@gmail.com",
+      "name": "kevin",
+      "password": "123",
+      "watcheeUserIds": {}
+    },
+    "34658": {
+      "email": "kevin67@gmail.com",
+      "name": "kevin",
+      "password": "123",
+      "watcheeUserIds": {}
+    },
+    "35228": {
+      "watcheeUserIds": {}
+    },
+    "65687": {
+      "email": "betty@email.com",
+      "name": "Betty",
+      "password": "cardigan",
+      "watcheeUserIds": {
+        "66414": true
+      }
+    },
+    "66414": {
+      "email": "kevin@gmail.com",
+      "name": "kevin",
+      "password": "123",
+      "watcheeUserIds": {
+        "97467": true
+      },
+      "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg=="
+    },
+    "69778": {
+      "email": "kevin1@gmail.com",
+      "name": "kevin",
+      "password": "123",
+      "watcheeUserIds": {}
+    },
+    "95112": {
+      "email": "augustine@email.com",
+      "name": "Augustine",
+      "password": "august",
+      "watcheeUserIds": {
+        "65687": true
+      }
+    },
+    "97467": {
+      "email": "james@email.com",
+      "name": "James",
+      "password": "betty",
+      "watcheeUserIds": {
+        "65687": true,
+        "66414": true,
+        "95112": true
+      }
+    },
+    "98667": {
+      "email": "kevin3@gmail.com",
+      "name": "kevin",
+      "password": "123",
+      "watcheeUserIds": {}
+    }
+  },
+  "posts": {
+    "226968": {
+      "id": "226968",
+      "creatorId": 97467,
+      "image": "",
+      "title": "dnbwahbdwk",
+      "start": "2022-03-23T11:05:00.000Z",
+      "description": "ndajwkbjkdh",
+      "createdAt": "2022-03-23T11:05:39.315Z",
+      "likes": {},
+      "comments": []
+    },
+    "322931": {
+      "id": "322931",
+      "creatorId": 97467,
+      "image": "",
+      "title": "dnbwahbdwkdwad",
+      "start": "2022-03-10T11:05:00.000Z",
+      "description": "ndajwkbjkdhdwaddwa",
+      "createdAt": "2022-03-23T11:05:55.817Z",
+      "likes": {
+        "66414": true
+      },
+      "comments": [
+        {
+          "userId": "66414",
+          "comment": ""
+        }
+      ]
+    },
+    "400147": {
+      "id": "400147",
+      "creatorId": 97467,
+      "image": "",
+      "title": "dwad",
+      "start": "2022-03-22T19:12:00.000Z",
+      "description": "the 2rd biggest company",
+      "createdAt": "2022-03-23T07:12:42.929Z",
+      "likes": {},
+      "comments": [
+        {
+          "userId": "66414",
+          "comment": "hi"
+        },
+        {
+          "userId": "66414",
+          "comment": "hi1"
+        },
+        {
+          "userId": "66414",
+          "comment": "hi2"
+        },
+        {
+          "userId": "66414",
+          "comment": "hi4"
+        },
+        {
+          "userId": "66414",
+          "comment": "1"
+        },
+        {
+          "userId": "66414",
+          "comment": "2"
+        }
+      ]
+    },
+    "469131": {
+      "id": "469131",
+      "creatorId": 97467,
+      "image": "",
+      "title": "new job",
+      "start": "2022-03-05T00:34:00.000Z",
+      "description": "dnajwk",
+      "createdAt": "2022-03-27T00:33:51.881Z",
+      "likes": {},
+      "comments": []
+    },
+    "510897": {
+      "id": "510897",
+      "creatorId": 97467,
+      "image": "",
+      "title": "dwajkdk",
+      "start": "2022-03-11T09:59:00.000Z",
+      "description": "njkdnawjbnd",
+      "createdAt": "2022-03-26T09:55:24.023Z",
+      "likes": {},
+      "comments": []
+    },
+    "684355": {
+      "id": "684355",
+      "creatorId": 97467,
+      "image": "",
+      "title": "dwad",
+      "start": "2022-03-03T11:09:00.000Z",
+      "description": "fwafwaf",
+      "createdAt": "2022-03-23T11:07:28.346Z",
+      "likes": {},
+      "comments": [
+        {
+          "userId": "66414",
+          "comment": "hi"
+        },
+        {
+          "userId": "66414",
+          "comment": "hi"
+        },
+        {
+          "userId": "66414",
+          "comment": "hi"
+        },
+        {
+          "userId": "66414",
+          "comment": "hi1"
+        },
+        {
+          "userId": "66414",
+          "comment": "hi1"
+        },
+        {
+          "userId": "66414",
+          "comment": ""
+        },
+        {
+          "userId": "66414",
+          "comment": ""
+        },
+        {
+          "userId": "66414",
+          "comment": ""
+        }
+      ]
+    },
+    "732886": {
+      "id": "732886",
+      "creatorId": 97467,
+      "image": "",
+      "title": "dhnwajkbd",
+      "start": "2022-03-02T09:55:00.000Z",
+      "description": "ndaekj",
+      "createdAt": "2022-03-26T09:54:01.351Z",
+      "likes": {},
+      "comments": []
+    },
+    "756884": {
+      "id": "756884",
+      "creatorId": 66414,
+      "image": "",
+      "title": "kemios",
+      "start": "2022-03-25T06:14:00.000Z",
+      "description": "biggest company",
+      "createdAt": "2022-03-25T05:14:15.055Z",
+      "likes": {},
+      "comments": []
+    },
+    "813396": {
+      "id": "813396",
+      "creatorId": 66414,
+      "image": "",
+      "title": "feafw",
+      "start": "2022-03-05T10:02:00.000Z",
+      "description": "dawdaw",
+      "createdAt": "2022-03-26T10:02:31.889Z",
+      "likes": {},
+      "comments": []
+    },
+    "857838": {
+      "id": "857838",
+      "creatorId": 66414,
+      "image": "",
+      "title": "dwadwa",
+      "start": "2022-03-26T10:02:00.000Z",
+      "description": "dwadawd",
+      "createdAt": "2022-03-26T10:01:30.208Z",
+      "likes": {},
+      "comments": []
+    },
+    "865058": {
+      "id": "865058",
+      "creatorId": 97467,
+      "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==",
+      "title": "Hello Kitty Director1",
+      "start": "2022-03-22T00:17:00.000Z",
+      "description": "Dedicated technical wizard with a passion and interest in human relationships",
+      "createdAt": "2022-03-06T01:30:15.850Z",
+      "likes": {
+        "66414": true
+      },
+      "comments": [
+        {
+          "userId": "65687",
+          "comment": "Hello there"
+        },
+        {
+          "userId": "95112",
+          "comment": "Hello there2"
+        },
+        {
+          "userId": "66414",
+          "comment": "hi"
+        },
+        {
+          "userId": "66414",
+          "comment": "hi"
+        },
+        {
+          "userId": "66414",
+          "comment": "1"
+        }
+      ]
+    },
+    "979347": {
+      "id": "979347",
+      "creatorId": 97467,
+      "image": "",
+      "title": "dnbwahbdwk",
+      "start": "2022-03-04T11:05:00.000Z",
+      "description": "ndajwkbjkdhdwad",
+      "createdAt": "2022-03-23T11:05:47.544Z",
+      "likes": {},
+      "comments": []
+    }
+  },
+  "nextMessageId": 1
+}

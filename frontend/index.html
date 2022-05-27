@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LurkForWork</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- You can add your styles and scripts here -->
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/global.css" />
+    <!-- CSS only -->
+    <!--    bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body style="background-color: cadetblue">
+    <!-- This is an example app structure, you can modify this as much as you choose --> 
+    <header>
+        <h1 style="text-align: center">lurkforwork.com</h1>
+        <nav id="nav" style="margin-left: 30px">
+            <li class="nav-item" id="nav-login">Login</li>
+            <li class="nav-item" id="nav-register">Register</li>
+        </nav>
+
+<!--login-->
+    </header>
+    <main role="main">
+        <div id="error-screen" style="margin: 0px 30px; padding: 30px; border: 1px solid black; border-radius: 10px; background-color: indianred; display: none">
+            <p id="error-text"></p>
+            <button id="error-close-button" type="button" class="btn btn-primary">close</button>
+        </div>
+
+        <form id="login-screen" style="margin: 0px 30px; padding: 30px; border: 1px solid black; border-radius: 10px; background-color: wheat">
+            <h1 style="text-align: center">Login</h1>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="email" aria-label="Recipient's username" aria-describedby="basic-addon2" id="login_email">
+                <span class="input-group-text">email</span>
+            </div>
+            <div class="input-group mb-3">
+                <input type="password" class="form-control" placeholder="password" aria-label="Recipient's username" aria-describedby="basic-addon2" id="login_password">
+                <span class="input-group-text">password</span>
+            </div>
+            <button type="button" class="btn btn-primary" style="width: 60vw; margin: 0 auto; display: block" id="login_button">login</button>
+        </form>
+
+<!--        register-->
+        <form id="register-screen"  style="margin: 0px 30px; padding: 30px; border: 1px solid black; display: none; background-color: wheat">
+            <h1>Register</h1>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="email" aria-label="Recipient's username" aria-describedby="basic-addon2" id="register_email">
+                <span class="input-group-text">email</span>
+            </div>
+            <div class="input-group mb-3">
+                <input type="password" class="form-control" placeholder="password" aria-label="Recipient's username" aria-describedby="basic-addon2" id="register_password">
+                <span class="input-group-text">password</span>
+            </div>
+            <div class="input-group mb-3">
+                <input type="password" class="form-control" placeholder="comfirm password" aria-label="Recipient's username" aria-describedby="basic-addon2" id="register_confirm_password">
+                <span class="input-group-text">confirm</span>
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="name" aria-label="Recipient's username" aria-describedby="basic-addon2" id="register_name">
+                <span class="input-group-text">name</span>
+            </div>
+            <button type="button" class="btn btn-primary" style="width: 60vw; margin: 0 auto; display: block" id="register_button">login</button>
+        </form>
+
+<!--        feed screen-->
+        <div id="main-screen" style="margin: 0px 30px; padding: 30px; display: none; height: 450px">
+            <div id="jobs"></div>
+            <i class="bi bi-person-fill" id="profile-button" style="position: fixed; top: 10px; right: 10px"></i>
+            <i class="bi bi-file-plus-fill" id="add-job-button" style="position: fixed; bottom: 20px; right: 20px"></i>
+        </div>
+
+<!--        profile screen-->
+        <div id="profile-screen" style="margin: 0px 30px; padding: 30px; border: 1px solid black; display: none; background-color: wheat">
+            <h1>Profile</h1>
+            <div id="profile-id"></div>
+            <div id="profile-email"></div>
+            <div id="profile-name"></div>
+            <img src="" id="profile-image">
+            <div id="profile-watcheeUserIds"></div>
+            <button type="button" class="btn btn-success" id="changed-button" style="display: none">change your profile</button>
+            <div id="profile-job-section"></div>
+            <i id="watch-button"></i>
+            <i class="bi bi-house-door-fill" style="position:fixed; top: 0; right: 10px" id="profile-home-button"></i>
+        </div>
+
+<!--        change profile screen-->
+        <form id="change-profile-screen" style="margin: 0px 30px; padding: 30px; border: 1px solid black; display: none; background-color: wheat">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="email" aria-label="Recipient's username" aria-describedby="basic-addon2" id="changed-email">
+                <span class="input-group-text">email</span>
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="name" aria-label="Recipient's username" aria-describedby="basic-addon2" id="changed-name">
+                <span class="input-group-text">name</span>
+            </div>
+            <div class="input-group mb-3">
+                <input type="password" class="form-control" placeholder="password" aria-label="Recipient's username" aria-describedby="basic-addon2" id="changed-password">
+                <span class="input-group-text">password</span>
+
+            </div>
+            <div class="mb-3">
+                <input class="form-control form-control-sm" id="changed-image" type="file" accept="image/*">
+            </div>
+
+            <button type="button" class="btn btn-primary" style="width: 60vw; margin: 0 auto; display: block" id="changed-submit-button">submit</button>
+        </form>
+
+<!--        add job screen-->
+        <form id="add-job-screen" style="margin: 0px 30px; padding: 30px; border: 1px solid black; display: none; background-color: wheat">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="title" aria-label="Recipient's username" aria-describedby="basic-addon2" id="add-job-title">
+                <span class="input-group-text">title</span>
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="description" aria-label="Recipient's username" aria-describedby="basic-addon2" id="add-job-description">
+                <span class="input-group-text">description</span>
+            </div>
+            <div class="mb-3">
+                <input class="form-control form-control-sm" id="add-job-image" type="file" accept="image/*">
+            </div>
+            <div>Start time</div>
+            <input type="datetime-local" id="add-job-start">
+
+            <button type="button" class="btn btn-primary" style="width: 60vw; margin: 0 auto; display: block" id="add-job-submit-button">submit</button>
+        </form>
+
+        <!--        update job screen-->
+        <form id="update-job-screen" style="margin: 0px 30px; padding: 30px; border: 1px solid black; display: none; background-color: wheat">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="title" aria-label="Recipient's username" aria-describedby="basic-addon2" id="update-job-title">
+                <span class="input-group-text">title</span>
+            </div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="description" aria-label="Recipient's username" aria-describedby="basic-addon2" id="update-job-description">
+                <span class="input-group-text">description</span>
+            </div>
+            <div class="mb-3">
+                <input class="form-control form-control-sm" id="update-job-image" type="file" accept="image/*">
+            </div>
+            <div>Start time</div>
+            <input type="datetime-local" id="update-job-start">
+
+            <button type="button" class="btn btn-primary" style="width: 60vw; margin: 10px auto; display: block; " id="update-job-submit-button">submit</button>
+        </form>
+        <!-- app goes here -->
+    </main>
+    <footer>
+        <p style="position:fixed; bottom: 0; color: #a4a4a4">&copy; lurkforwork.com 2022</p>
+    </footer>
+    <script type="module" src="src/main.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <!--    bootStrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
